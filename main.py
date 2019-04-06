@@ -23,9 +23,11 @@ def mouseRight(event):
     piano_play(idx)
 
 import Piano
+pianoPlay = Piano.Player() 
 def piano_play(idx):
-    pianoPlay = Piano.Player() 
     pianoPlay.play(idx)
+
+
 
 canvas.bind("<Button-1>", mouseRight)
 mainloop()
